@@ -3,7 +3,7 @@ from .lfw import LfwDataset
 from torch.utils.data import DataLoader
 
 
-def get_loader(dataset, data_dir='./data/Figaro1k', train=True, batch_size=64, shuffle=True,
+def get_loader(dataset, data_dir='./data/Dataset', train=True, batch_size=64, shuffle=True,
         joint_transforms=None, image_transforms=None, mask_transforms=None, num_workers=0, gray_image=False):
     """
     Args:

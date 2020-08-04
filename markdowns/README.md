@@ -14,7 +14,7 @@ sh data/figaro.sh #<directory>
 python3 main.py \
   --networks segnet \
   --dataset figaro \
-  --data_dir ./data/Figaro1k \
+  --data_dir ./data/Dataset \
   --scheduler ReduceLROnPlateau \
   --batch_size 4 \
   --epochs 100 \

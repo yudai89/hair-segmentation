@@ -23,7 +23,7 @@ if __name__ == '__main__':
             default='./models/pspnet_resnet101_sgd_lr_0.002_epoch_100_test_iou_0.918.pth')
     parser.add_argument('--dataset', type=str, default='figaro',
             help='Name of dataset you want to use default is "figaro"')
-    parser.add_argument('--data_dir', help='path to Figaro1k folder', type=str, default='./data/Figaro1k')
+    parser.add_argument('--data_dir', help='path to Dataset folder', type=str, default='./data/Dataset')
     parser.add_argument('--networks', help='name of neural network', type=str, default='pspnet_resnet101')
     parser.add_argument('--save_dir', default='./overlay',
             help='path to save overlay images, default=None and do not save images in this case')

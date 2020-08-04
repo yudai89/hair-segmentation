@@ -143,6 +143,7 @@ dmypy.json
 .idea/**/libraries
 
 # Dataset
+Dataset/
 Figaro1k/
 Lfw/
 
@@ -150,7 +151,7 @@ Lfw/
 logs/
 ckpt/
 
-.vscode/
+.vscode/z
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json

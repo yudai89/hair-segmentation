@@ -16,7 +16,7 @@ git-lfs 2.3.4 (to download uploaded model files)
 ### Downloading dataset
 ```bash
 # specify a directory for dataset to be downloaded into, else default is ./data/
-sh data/figaro.sh #<directory>
+sh data/dataset.sh #<directory>
 ```
 ### Running trainer
 

@@ -151,7 +151,7 @@ Lfw/
 logs/
 ckpt/
 
-.vscode/z
+.vscode/
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json

@@ -22,12 +22,12 @@ def str2bool(s):
 
 def get_args():
     parser = argparse.ArgumentParser(description='Hair Segmentation')
-    parser.add_argument('--networks', default='mobilenet')
+    parser.add_argument('--networks', default='pspnet_resnet101')
     parser.add_argument('--scheduler', default='ReduceLROnPlateau')
     parser.add_argument('--dataset', default='figaro')
     parser.add_argument('--data_dir', default='./data/Dataset')
-    parser.add_argument('--batch_size', type=int, default=4)
-    parser.add_argument('--epochs', default=5, type=int)
+    parser.add_argument('--batch_size', type=int, default=16)
+    parser.add_argument('--epochs', default=50, type=int)
     parser.add_argument('--lr', default=0.0001, type=float)
     parser.add_argument('--num_workers', type=int, default=2)
     parser.add_argument('--img_size',type=int, default=256)

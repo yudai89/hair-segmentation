@@ -20,7 +20,7 @@ def str2bool(s):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--ckpt_dir', help='path to ckpt file',type=str,
-            default='./models/pspnet_resnet101_sgd_lr_0.002_epoch_100_test_iou_0.918.pth')
+            default='./models/pspnet_resnet101_adam_lr_0.0001_epoch_47.pth')
     parser.add_argument('--dataset', type=str, default='figaro',
             help='Name of dataset you want to use default is "figaro"')
     parser.add_argument('--data_dir', help='path to Dataset folder', type=str, default='./data/Dataset')

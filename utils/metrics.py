@@ -25,11 +25,10 @@ class MultiThresholdMeasures(Metric):
         y_pred = torch.sigmoid(logit)
         y_pred = y_pred.view(n, -1, 1).repeat(1, 1, 11) > self._thrs
         y = y.byte().view(n, -1, 1).repeat(1, 1, 11)
-
         tp = y_pred * y == 1
         tn = y_pred + y == 0
-        fp = y_pred - y == 1
-        fn = y - y_pred == 1
+        fp = ~y * y_pred == 1
+        fn = y * ~y_pred == 1
 
         self._tp += torch.sum(tp, dim=[0,1]).float()
         self._tn += torch.sum(tn, dim=[0,1]).float()
